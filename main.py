@@ -8,6 +8,7 @@ langas = Tk()
 virsus = Frame(langas)
 apacia = Frame(langas)
 apacia2 = Frame(langas)
+langas.geometry("550x800")
 
 pygame.init()
 
@@ -275,7 +276,7 @@ def spausdinti(pasirinkta):
         langas.bind("<KP_1>", guiro)
     print(pasirinkta)
 
-# Radio button
+# Checkbox'am
 k = IntVar()
 a = IntVar()
 b = IntVar()
@@ -334,7 +335,6 @@ atidaryti.bind("<Button-1>", open_file)
 groti = Button(apacia, text="Groti Faila >", fg='black', bg='#cc5a2a',height=1, width=8)
 groti.bind("<Button-1>", grojimas)
 
-
 #remai
 rem1 = Button(apacia, text="", fg='black', bg='#cc5a2a',height=1, width=9)
 rem2 = Button(apacia, text="", fg='black', bg='#cc5a2a',height=1, width=20)
@@ -356,8 +356,6 @@ loopig_b = Checkbutton(apacia, text="B 1000x\nLoop", padx = 1, variable=b, onval
 loopig_c = Checkbutton(apacia, text="F 1000X\nLoop", padx = 1, variable=f, onvalue=1, offvalue=0,command=radiob_loop_on_f, bg='#FFA501')
 
 metronomas1 = Checkbutton(apacia, text="Metronomas", padx = 1, variable=m, onvalue=1, offvalue=0,command=metronomas, bg='#FFA501')
-
-langas.geometry("550x800")
 
 # isdestymas
 virsus.pack()
